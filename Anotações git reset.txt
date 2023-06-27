@@ -1,0 +1,25 @@
+       | git reset
+
+git reset mixed <- comum, pode aparecer como "git reset" é usado para apagar arquivos que estão na Staging area (após dado início
+ao comando "git add ."), porém ele não mexe em arquivos que estão no diretório (modificados)
+
+git reset soft <- Não toca no índice dos arquivos nem muito menos no diretório de trabalho, ele reseta a HEAD (principal) para um outro
+commit especificado no comando, deixando os os arquivos em "Changes added to commit", ou seja, eles precisam ser comitados.
+
+git reset  --hard <- Reseta a staging area tanto quanto o diretório é útil porém não é seguro pelo fato do risco de perder todos os dados
+do seu projeto
+
+git revert <- Projetado para desfazer de maneira segura, criar um novo commit com as alterações inversas dele, assim não haverá perca 
+de dados
+
+git reset <- Ele apagará as informações do projeto, ao invés de gerar uma alteração inversa, os dados serão deletados
+
+  
+
+      Exemplos práticos:
+
+git reset <commit>    - Usando apenas esse comando, entende-se que é misto pois é o padrão, como já citado, ele apagará os arquivos que estão 
+na stagin area e vai permanecer aqueles que estão no diretório especificando um commit, mudando o branch para o mesmo 
+
+git reset --hard <commit>  - Vai resetar a staging area e o diretório, quando especificado um commit, vai ter o mesmo papel de redirecio
+namento do branch 

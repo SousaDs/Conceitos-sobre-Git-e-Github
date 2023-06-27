@@ -1,0 +1,571 @@
+                                                                       Atividade de TPA - Git e Github
+
+grupo: Vinicius Morais, Vitor Franca e Rafael
+
+                                                                        //ENTRADA NA PASTA
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~ ((3dee791...))
+$ cd TrabalhoGit
+
+                                                                       //CRIAÇÃO DO REPOSITÓRIO
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit ((3dee791...))
+$ git init
+Initialized empty Git repository in C:/Users/Eloina&netinhos/TrabalhoGit/.git/
+
+
+                                                        //INFORMAÇÕES DO AUTOR (DADOS DO GITHUB)
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git config --global user.email "vsousamorais18@gmail.com"
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git config --global user.name "ViniciusSousa08"
+
+
+                                                               //CRIAÇÃO DO ARQUIVO NA PASTA
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ touch modproject.txt
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ vim modproject.txt
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git status modproject.txt
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        modproject.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ 
+                                                     //RASTREANDO ARQUIVO PASSANDO AO REPOSITÓRIO
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git add .
+warning: in the working copy of 'modproject.txt', LF will be replaced by CRLF the next time Git touches it
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git commit -m "modproject.txt Comitado"
+[master (root-commit) 64797fa] modproject.txt Comitado
+ 1 file changed, 1 insertion(+)
+ create mode 100644 modproject.txt
+
+
+                                                                     //CRIANDO ARQUIVO TIPO 2 NA PASTA    
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ touch modproject2.txt
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ vim modproject2.txt
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git status modproject2.txt
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        modproject2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+ 
+
+                                                           //RASTREANDO ARQUIVO 2 PASSANDO AO REPOSITÓRIO
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git add .
+warning: in the working copy of 'modproject2.txt', LF will be replaced by CRLF the next time Git touches it
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git commit -m "modproject2.txt Comitado"
+[master d9a96ea] modproject2.txt Comitado
+ 1 file changed, 1 insertion(+)
+ create mode 100644 modproject2.txt
+
+
+                                                                      //CRIAÇÃO DO ARQUIVO TIPO 3 NA PASTA
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ touch modproject3.txt
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ vim modproject3.txt
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git status modproject3.txt
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        modproject3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+                                                   //RASTREANDO ARQUIVO 3 PASSANDO AO REPOSITÓRIO
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git add .
+warning: in the working copy of 'modproject3.txt', LF will be replaced by CRLF the next time Git touches it
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git commit -m "modproject3.txt Comitado"
+[master 6adcece] modproject3.txt Comitado
+ 1 file changed, 1 insertion(+)
+ create mode 100644 modproject3.txt
+
+
+                                                                 //MODIFICANDO TODOS OS ARQUIVOS
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git status modproject.txt
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   modproject.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ vim modproject2.txt
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git status modproject2.txt
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   modproject2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ vim modproject3.txt
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git status modproject3.txt
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   modproject3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+                                                             //MOSTRANDO TODAS ALTERAÇÕES DOS ARQUIVOS
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git diff modproject.txt
+warning: in the working copy of 'modproject.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/modproject.txt b/modproject.txt
+index c314143..d262997 100644
+--- a/modproject.txt
++++ b/modproject.txt
+@@ -1 +1,2 @@
+-Primeira linha de modificacao do arquivo 1
++Primeira linha de modificacao do arquivo 1
++Modificacao do arquivo para uso da Diff
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git diff modproject2.txt
+warning: in the working copy of 'modproject2.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/modproject2.txt b/modproject2.txt
+index 244f1f5..bc4ad70 100644
+--- a/modproject2.txt
++++ b/modproject2.txt
+@@ -1 +1,2 @@
+ Primeira linha de modificacao do arquivo 2
++Segunda modificacao para uso da Diff
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git diff modproject3.txt
+warning: in the working copy of 'modproject3.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/modproject3.txt b/modproject3.txt
+index 7028320..388f707 100644
+--- a/modproject3.txt
++++ b/modproject3.txt
+@@ -1 +1,2 @@
+ Primeira linha de modificacao do arquivo 3
++Segunda modificacao para uso da Diff
+
+ 
+                                                                          //REMOVENDO ARQUIVO 1
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git rm modproject.txt
+rm 'modproject.txt'
+
+
+                                                                        //RENOMEANDO ARQUIVO 3
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git mv modproject3.txt alterado3.txt
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ ls
+alterado3.txt  modproject2.txt
+
+
+                                                            //CRIANDO PASTA PARA MOVER ARQUIVO 2
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ mkdir src
+
+
+                                                             //MOVENDO ARQUIVO 2 PARA PASTA "src"
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git mv modproject2.txt src/modprocjet2.txt
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ ls
+alterado3.txt  src
+
+                                                                 //CRIAÇÃO DE UMA NOVA BRANCH
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit ((v0.99))
+$ git branch main
+
+
+                                           //MODIFICANDO ARQUIVO 3 SOMENTE NA BRANCH "main"
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git checkout main
+Switched to branch 'main'
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (main)
+$ vim modproject3.txt
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (main)
+$ git add .
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (main)
+$ git commit -m "teste de branch com Main"
+[main 1d92c27] teste de branch com Main
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+                                                     //RETORNANDO A BRANCH PRINCIPAL
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (main)
+$ git checkout master
+Switched to branch 'master'
+
+
+                                                                   //COMITANDO OS DADOS 
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master|MERGING)
+$ git add .
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master|MERGING)
+$ git commit -m "Comitado para uso da branches"
+[master 044b441] Comitado para uso da branches
+
+
+                                                      //VERIFICANDO HISTÓRICO DE COMMITS E BRANCHES
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git log
+commit 044b44188d234f9e063d89d7f8f4ae93cb4231c5 (HEAD -> master)
+Merge: 5e04745 1d92c27
+Author: ViniciusSousa08 <vsousamorais18@gmail.com>
+Date:   Fri Jun 9 14:46:14 2023 -0300
+
+    Comitado para uso da branches
+
+commit 1d92c2742110f06eb0403656247c1a30b485ab44 (main)
+Author: ViniciusSousa08 <vsousamorais18@gmail.com>
+Date:   Fri Jun 9 14:44:19 2023 -0300
+
+    teste de branch com Main
+
+commit 5e04745bcc7c36b440dc2588435848bf28c76a4a
+Author: ViniciusSousa08 <vsousamorais18@gmail.com>
+Date:   Fri Jun 9 14:43:08 2023 -0300
+
+    comit
+
+commit 456f2d71ffdcef234018756c95076a08bcdd06d8
+Merge: 108246f 8f6e0cf
+Author: ViniciusSousa08 <vsousamorais18@gmail.com>
+Date:   Fri Jun 9 14:41:33 2023 -0300
+
+    Commit para branch
+
+commit 8f6e0cfede6549a90b6d9c1767feefd940f8159d
+Author: ViniciusSousa08 <vsousamorais18@gmail.com>
+Date:   Fri Jun 9 14:23:08 2023 -0300
+ 
+
+                                                     //RELACIONANDO A BRANCH "Conceitual" com a principal "master"
+ 
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git merge Conceitual
+Already up to date.
+
+
+                                         //ANALISANDO AS MODIFICAÇÕES FEITAS APÓS RELACIONAMENTO DAS BRANCHES
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ vim modproject3.txt
+
+
+                                                                          //REMOVENDO ARQUIVO 2
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git rm modproject2.txt
+rm 'modproject2.txt'
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git add .
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git commit -m "Arquivo 2 excluido"
+[master ff58839] Arquivo 2 excluido
+ 1 file changed, 2 deletions(-)
+ delete mode 100644 modproject2.txt
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ ls
+modproject.txt  modproject3.txt
+                                                              //MOSTRANDO HISTÓRICO DE COMMITS 
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git log --oneline
+ff58839 (HEAD -> master) Arquivo 2 excluido
+8b0027f Arquivo deletado registrado
+827899f comitado
+560a0b1 (tag: v2.0.1, Conceitual) arquivo do Conceitual comitado
+8367a7e Modelo Comitado
+80452aa (tag: v3.0.0) Registrado na master
+dbdf401 modproject3.txt da master Comitado
+32e98c4 (tag: v2.0.0) modproject3 Comitado
+044b441 Comitado para uso da branches
+1d92c27 teste de branch com Main
+5e04745 comit
+456f2d7 Commit para branch
+8f6e0cf arquivo comitado
+108246f (tag: v1.0) Arquivos comitados
+6adcece (tag: v0.99) modproject3.txt Comitado
+d9a96ea modproject2.txt Comitado
+64797fa modproject.txt Comitado
+                                                   //DESFAZENDO MUDANÇAS COM "git reset --hard <commit>"
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ git reset  --hard 8b00
+HEAD is now at 8b0027f Arquivo deletado registrado
+
+Eloina&netinhos@LAPTOP-V01JT7R8 MINGW64 ~/TrabalhoGit (master)
+$ ls
+modproject.txt  modproject2.txt  modproject3.txt
+
+
+
+     
+                                                                  Projeto de Git direcionado ao Github
+
+                                                       //OLHANDO OS ARQUIVOS PRESENTES NA PASTA:
+
+ VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2
+$ ls
+contato.html  index.html  sobre.html
+
+                                                                  //CRIANDO REPOSITÓRIO LOCAL:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2
+$ git init
+Initialized empty Git repository in C:/testeGIT2/.git/
+
+                                       //SALVANDO EM STAGE (ÁREA TEMPORÁRIA PARA SALVAR A PRÓXIMA VERSÃO ):
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (master)
+$ git add .
+
+                                                                    //VENDO SE ESTÁ TUDO SALVO:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   contato.html
+        new file:   index.html
+        new file:   sobre.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contato.html
+
+
+                                                       //SALVANDO MODIFICAÇÃO DA PAG. CONTATO:
+              
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (master)
+$ git add .
+
+                                                                          //CRIANDO COMMIT:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (master)
+$ git commit -m "Página Home, Sobre e Contato"
+[master (root-commit) cf8a271] Página Home, Sobre e Contato
+ 3 files changed, 45 insertions(+)
+ create mode 100644 contato.html
+ create mode 100644 index.html
+ create mode 100644 sobre.html
+
+                                                                     //VENDO SE ESTÁ TUDO CERTO:
+ 
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+                                                                          //CRIANDO O BRANCH:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (master)
+$ git branch -M main
+
+                                                                          //COLOCANDO NO GITHUB:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (main)
+$ git remote add origin https://github.com/VitorMenezes25/Pagina-Home-Sobre-Contato.git
+
+                                                                    //TRANSFERINDO PARA O GITHUB:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 757 bytes | 757.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/VitorMenezes25/Pagina-Home-Sobre-Contato.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+//VENDO NOVAMENTE O STATUS:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contato.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+//SALVANDO ALTERAÇÕES PAG. CONTATO:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (main)
+$ git add .
+
+//2º COMMIT:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (main)
+$ git commit -m "Contato com telefone"
+[main 21c59b5] Contato com telefone
+ 1 file changed, 1 insertion(+)
+
+//ENVIANDO PARA O GITHUB O 2º COMMIT:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 377 bytes | 377.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/VitorMenezes25/Pagina-Home-Sobre-Contato.git
+   cf8a271..21c59b5  main -> main
+
+//VENDO SE ESTÁ TUDO CERTO:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        produtos.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+//ADCIONANDO A PAG. PRODUTOS:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (main)
+$ git add .
+
+//ADCIONANDO O 3º COMMIT COM A PAG. PRODUTOS:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (main)
+$ git commit -m "Produtos"
+[main 94cee0c] Produtos
+ 1 file changed, 16 insertions(+)
+ create mode 100644 produtos.html
+
+//ENVIANDO O 3º COMMIT:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 563 bytes | 563.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/VitorMenezes25/Pagina-Home-Sobre-Contato.git
+   21c59b5..94cee0c  main -> main
+
+//REMOVENDO A PAG. PRODUTOS:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (main)
+$ git rm "produtos.html"
+rm 'produtos.html'
+
+//VENDO SE FOI DELETADA:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    produtos.html
+
+                                                 //CRIANDO O 4º COMMIT COM A PAG. PRODUTOS JÁ DELETADA:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (main)
+$ git commit -m "Remoção pag. Produtos"
+[main e6d5150] Remoção pag. Produtos
+ 1 file changed, 16 deletions(-)
+ delete mode 100644 produtos.html
+
+                                                                     //ENVIANDO AO GITHUB O 4º COMMIT:
+
+VITOR@DESKTOP-V5N9OND MINGW64 /c/testeGIT2 (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 252 bytes | 252.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/VitorMenezes25/Pagina-Home-Sobre-Contato.git
+   94cee0c..e6d5150  main -> main

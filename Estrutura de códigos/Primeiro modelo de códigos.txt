@@ -1,0 +1,157 @@
+                                                                            Código Git - Instruções
+
+GRUPO: Vinicius Morais, Rafael e Vitor Franca
+
+                                                                          //Desenvolvendo um repositório
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands ((fd6fb20...))
+$ git init
+Initialized empty Git repository in C:/Users/Eloina&netinhos/Comands/.git/
+
+                                                                             //criando arquivo 1
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ touch sousa.txt
+
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ vim sousa.txt
+
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ git status sousa.txt
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sousa.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ git add .
+warning: in the working copy of 'sousa.txt', LF will be replaced by CRLF the next time Git touches it
+
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ git commit -m "sousa.txt comitado"
+[master (root-commit) c772dab] sousa.txt comitado
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sousa.txt
+                                                                               //criando arquivo 2
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ touch sousa2.txt
+
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ vim sousa2.txt
+
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ git add .
+warning: in the working copy of 'sousa2.txt', LF will be replaced by CRLF the next time Git touches it
+
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ git commit -m "sousa2.txt comitado"
+[master c47be33] sousa2.txt comitado
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sousa2.txt
+                                                                                //Criando arquivo 3
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ touch sousa3.txt
+
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ vim sousa3.txt
+
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ git add .
+warning: in the working copy of 'sousa3.txt', LF will be replaced by CRLF the next time Git touches it
+
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ git commit -m "sousa3.txt comitado"
+[master 724c5eb] sousa3.txt comitado
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sousa3.txt
+
+                                                            //Verificando todas as alterações dos arquivos
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ cat sousa.txt
+Primeira mod do arquivo
+
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ cat sousa2.txt
+Primeira mod do arquivo 2
+
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ cat sousa3.txt
+Primeira mod do arquivo 3
+                                                                               //Verificando os históricos de COMMIT´S 
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ git log
+commit 724c5ebb5fef191ca67d30e1b499dea30e435b30 (HEAD -> master)
+Author: Vinicius <vsousamorais18@gmail.com>
+Date:   Fri Jun 9 01:18:22 2023 -0300
+
+    sousa3.txt comitado
+
+commit c47be33af06a80662623e065bf1788c9d408f28b
+Author: Vinicius <vsousamorais18@gmail.com>
+Date:   Fri Jun 9 01:17:45 2023 -0300
+
+    sousa2.txt comitado
+
+commit c772dab32837cb1256395dfd2948cd5f5eea23c7
+Author: Vinicius <vsousamorais18@gmail.com>
+Date:   Fri Jun 9 01:16:56 2023 -0300
+
+    sousa.txt comitado
+
+                                                                             //Remoção do arquivo
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ git rm sousa3.txt
+rm 'sousa3.txt'
+
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ ls
+sousa.txt  sousa2.txt
+                                                                          //Renomeando o arquivo "sousa.txt" para "vinicius.txt"
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ git mv sousa.txt vinicius.txt
+
+                                                           //Monstrando a maneira que os arquivos estão se comportando com "git status"
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    sousa3.txt
+        renamed:    sousa.txt -> vinicius.txt
+                                                                          //Comitando arquivos modificados
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ git commit -m "arquivo excluido"
+[master dabd0c0] arquivo excluido
+ 2 files changed, 1 deletion(-)
+ delete mode 100644 sousa3.txt
+ rename sousa.txt => vinicius.txt (100%)
+                                                                
+                                                                    //Movendo arquivo criando uma sub-pasta como "src" 
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ mkdir src
+
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ git mv vinicius.txt src/vinicius.txt
+
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    vinicius.txt -> src/vinicius.txt
+
+
+                                                           //Analisando alterações do arquivo na working in directory
+Vinicius@LAPTOP-V01JT7R8 MINGW64 ~/Comands (master)
+$ git diff
+warning: in the working copy of 'sousa2.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/sousa2.txt b/sousa2.txt
+index 513e727..3bf06b9 100644
+--- a/sousa2.txt
++++ b/sousa2.txt
+@@ -1 +1,2 @@
+ Primeira mod do arquivo 2
++Segunda modificacao do arquivo 2

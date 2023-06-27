@@ -1,0 +1,52 @@
+branch <- uma ramificação (DIVISÃO OU SEPA-
+RAÇÃO) aplicada na linha principal
+
+A vantagem de utilizar o branch está relacionada
+com a questão de modificações sem necessitar a criação
+de uma "ordem cronológica", ou seja, quando terminamos um
+projeto e queremos modifica-lo, aplicamos essa sub-divisão
+para que o projeto principal não tenha partes da sua estrutura 
+separada
+
+Vários títulos do projeto, "ordem cronológica".
+
+Ex: Myproject1.0; Myproject2.0; Myproject3.0...
+
+
+
+
+Quando aplicado o BRANCH (ramificação)
+
+Ex: Myproject1.0 <--- modificação
+         ^
+         |
+         |
+     modificação
+
+
+
+Merge <- O merge é responsável pela parte do relacionamento da branch alternativa com a linha principal.
+Quando por exemplo existe duas entidades utilizando branchs alternativas no mesmo projeto, desde que esteja em 
+posições e linhas diferentes e que não tenha mexido na estrutura da linguagem, o Git aplica a informação de ambas no corpo principal, 
+caso o contrário, se torna um processo mais manual. 
+
+Remote <- Gera a capacidade de referenciar um repositório ao outro, ou seja, podemos utilizar as informações de um repositório e repassar 
+para um projeto novo
+
+
+git diff <-  comando Git que nos faz identificar os detalhes de maneira mais precisa de um arquivo, desde de suas modificações até aquilo
+que não foi comitado
+
+Ex:
+Estrutura | GitBash
+
+ touch sousa.txt **criação de um arquivo na pasta determinada**
+
+vim sousa.txt - <" Essa é minha alteração já comitada "> **modificação já comitado, está "salva".** 
+                    <" Essa é a minha alteração sem commit "> **modificação que acabei de aplicar sem nenhum tipo de commit, "sem salvar"**
+
+
+git diff ->    Essa é minha alteração já comitada 
+        + Essa é a minha alteração sem commit          **Sua representação possuí um "+" porque o Git está demonstrando que aquele texto não
+                                                                           foi comitado, normalmente, esse tipo aparece com o destaque da cor VERDE.
+
